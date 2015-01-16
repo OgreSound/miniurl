@@ -20,7 +20,7 @@ router.post('/shorten', function (req, res, next) {
     var id = shortener.shortenURL(req.body.name);
     var shortened = "minify.me/" + id;
     console.log("Shortened url: " + shortened);
-    res.send(shortened);
+    res.render('shortenedURL', {id: id, url: shortened});
 });
 
 
