@@ -49,6 +49,8 @@ h2 {
 input:focus {
     outline-color: #57d6c7;
     box-shadow: 0 0 1px #57d6c7;
+    -moz-box-shadow: 0 0 1px #57d6c7;
+    -webkit-box-shadow: 0 0 1px #57d6c7;
 }
 
 #shorten {
@@ -74,12 +76,15 @@ input:focus {
 }
 
 #url-field {
+    width: 130px;
     border-width: 0px;
-    padding: 9px 15px !important;
+    padding: 9px 10px 9px 10px !important;
     border-radius: 3px 0 0 3px;
     -moz-border-radius: 3px 0 0 3px;
     -webkit-border-radius: 3px 0 0 3px;
     box-shadow: 0 0 0 1px #ffffff;
+    -moz-box-shadow: 0 0 0 1px #ffffff;
+    -webkit-box-shadow: 0 0 0 1px #ffffff;
 }
 
 a {
