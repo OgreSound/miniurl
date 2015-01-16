@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var shortener = require('../my_modules/shortener');
 
 
 router.get('/:id', function (req, res, next) {
@@ -16,7 +17,10 @@ router.get('/', function (req, res, next) {
 
 router.post('/shorten', function (req, res, next) {
     console.log(req.body.name);
-    res.render('index');
+    var id = shortener.shortenURL(req.body.name);
+    var shortened = "minify.me/" + id;
+    console.log("Shortened url: " + shortened);
+    res.send(shortened);
 });
 
 
