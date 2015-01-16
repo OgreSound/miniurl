@@ -5,7 +5,7 @@ var shortener = require('../my_modules/shortener');
 router.post('/shorten', function (req, res, next) {
     console.log(req.body.url);
     var id = shortener.shortenURL(req.body.url);
-    var shortened = "minify.me/" + id;
+    var shortened = "whispering-cliffs-6948.herokuapp.com/" + id;
     console.log("Shortened url: " + shortened);
     res.render('shortenedURL', {id: id, url: shortened});
 });

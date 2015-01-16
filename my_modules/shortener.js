@@ -2,7 +2,7 @@
  * Created by aleksi on 16.1.15.
  */
 
-var count = 0;
+var count = 10000;
 var charArray =
     "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
