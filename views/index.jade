@@ -1,5 +1,10 @@
 extends layout
 
 block content
-    h1= title
-    p Welcome to #{title}
+    h1 miniurl
+    h2 make your urls tiny
+
+    form(action="shorten" method="post")
+        input(id="url-field",type="text",name="url" , placeholder="URL you what to shorten")
+        input(type="submit",value="minify", id="shorten")
+

@@ -1,8 +1,59 @@
 body {
-    padding: 50px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: #ff7c00;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font: 100px bold, sans-serif;
+    margin-top: 10%;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font: 20px sans-serif;
+    margin-top: 0px;
+}
+
+input:focus {
+    outline-color: #57d6c7;
+    box-shadow: 0 0 1px #57d6c7;
+}
+
+#shorten {
+
+    border-bottom-width: 0px;
+    border-image-width: 0px;
+    border-top-width: 0px;
+    padding: 8.7px 15px 9px !important;
+    font-size: 14px !important;
+    background-color: #57d6c7;
+    font-weight: bold;
+    text-shadow: 1px 1px #57D6C7;
+    color: #ffffff;
+    border-radius: 0px 3px 3px 0px;
+    -moz-border-radius: 0px 3px 3px 0px;
+    -webkit-border-radius: 0px 3px 3px 0px;
+    border: 1px solid #57D6C7;
+    cursor: pointer;
+    /*box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;   */
+
+}
+
+#url-field {
+    border-width: 0px;
+    padding: 9px 15px !important;
+    border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+    box-shadow: 0 0 0 1px #ffffff;
 }
 
 a {
     color: #00B7FF;
 }
+
