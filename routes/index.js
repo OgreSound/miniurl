@@ -25,7 +25,7 @@ router.get('/:id', function (req, res, next) {
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-    console.log("base case");
+
     res.render('index');
 });
 

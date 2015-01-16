@@ -20,13 +20,13 @@ exports.shortenURL = function shortenURL(url) {
         c = division;
         result += newChar;
     } while (division > 0);
-    console.log(url);
+
     if (url.substring(0, 4) === "http") {
         urlDict[result] = url;
     } else {
         urlDict[result] = "http://" + url;
     }
-    console.log("urDIct[result] : " + urlDict[result]);
+    console.log("urDict[result] : " + urlDict[result]);
     return result;
 };
 
