@@ -1,3 +1,9 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
     background-color: #ff7c00;
@@ -69,6 +75,7 @@ input:focus {
     -webkit-border-radius: 0px 3px 3px 0px;
     border: 1px solid #57D6C7;
     cursor: pointer;
+
     /*box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;   */
@@ -76,6 +83,7 @@ input:focus {
 }
 
 #url-field {
+
     width: 130px;
     border-width: 0px;
     padding: 9px 10px 9px 10px !important;
