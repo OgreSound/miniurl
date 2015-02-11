@@ -1,20 +1,22 @@
 var express = require('express');
 var router = express.Router();
 var shortener = require('../my_modules/shortener');
+var os = require('os');
+var hostname = os.hostname();
+
+function shorten(req) {
+    var id = shortener.shortenURL(req.body.url);
+    var shortened = hostname + id;
+    return shortened;
+}
 
 router.post('/shorten', function (req, res, next) {
-    var id = shortener.shortenURL(req.body.url);
-    var shortened = "whispering-cliffs-6948.herokuapp.com/" + id;
-
-    res.render('shortenedURL', {id: id, url: shortened});
+    res.render('shortenedURL', {id: id, url: shorten(req)});
 });
 
 router.post('/api/shorten', function (req, res, next) {
-
-    var id = shortener.shortenURL(req.body.url);
-    var shortened = "whispering-cliffs-6948.herokuapp.com/" + id;
     res.set('Content-Type', 'text/plain');
-    res.send(shortened);
+    res.send(shorten(req));
 });
 
 router.get('/:id', function (req, res, next) {
@@ -32,6 +34,7 @@ router.get('/:id', function (req, res, next) {
 /* GET home page. */
 router.get('/', function (req, res, next) {
     //res.json({ message: 'hooray! welcome to our api!' });
+
     res.render('index');
 });
 
